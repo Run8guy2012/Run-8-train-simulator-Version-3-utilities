@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run8 Train Dispatch & Tonnage Utility</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Hero Header with Background Photo */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 1)), 
+                        url('header-bg.jpg') center/cover no-repeat;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #ffb703;
+        }
+
+        .hero h1 {
+            color: #ffb703;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 600px;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Card Sections */
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .card h2 {
+            color: #2a9d8f;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+
+        /* Feature List */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #ffb703;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Download Section & Buttons */
+        .download-box {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #121212;
+            background-color: #ffb703;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #e0a100;
+        }
+
+        .btn-secondary {
+            background-color: #2a9d8f;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #218378;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO HEADER WITH BACKGROUND IMAGE -->
+    <div class="hero">
+        <h1>Run8 Train Dispatch & Tonnage Utility</h1>
+        <p>Standalone simulator-calibrated train makeup, HPT calculator, and DPU placement assistant.</p>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="container">
+
+        <!-- OVERVIEW -->
+        <div class="card">
+            <h2>About The Tool</h2>
+            <p>This utility replaces manual guesswork in Run 8 train building. It calculates exact train length, gross tonnage, and horsepower-per-ton (HPT) ratios calibrated to Run 8's physical car tare weights and loaded specs.</p>
+        </div>
+
+        <!-- KEY FEATURES -->
+        <div class="card">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Quick Service Templates:</strong> Rapidly estimate intermodal, unit bulk, and manifest trains.</li>
+                <li><strong>Custom Block Builder:</strong> Assemble cars block-by-block with equipment like 73ft centerbeams, Bethgons, and high-cube boxcars.</li>
+                <li><strong>Smart Power Advisory:</strong> Calculates exact locomotive deficit and tells you how many units to add to hit target HPT.</li>
+                <li><strong>DPU Cut Calculations:</strong> Recommends optimal DPU placement to protect drawbars and manage slack action.</li>
+                <li><strong>Overpower Protection:</strong> Flags warnings when HPT exceeds safe thresholds to prevent wheel slip and draft force issues.</li>
+            </ul>
+        </div>
+
+        <!-- DOWNLOAD SECTION -->
+        <div class="card download-box">
+            <h2>Downloads & Files</h2>
+            <p style="margin-bottom: 15px;">Grab the latest release or view the source code directly.</p>
+            <a href="Run8_DPU_Calculator.exe" class="btn">Download Executable (.exe)</a>
+            <a href="Run8_DPU_Calculator.py" class="btn btn-secondary">Download Python Script (.py)</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Run8 Train Dispatch Utility &bull; Designed for Virtual Railroaders</p>
+    </footer>
+
+</body>
+</html>
