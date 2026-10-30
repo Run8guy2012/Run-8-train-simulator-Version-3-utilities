@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run 8 Utilities Hub - Under Construction</title>
+    <title>Run 8 Utilities Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: #f0f0f0;
+            margin: 0;
+            padding: 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
         }
         .container {
             border: 2px solid #ff9900;
             padding: 40px;
             border-radius: 8px;
             background-color: #2a2a2a;
-            max-width: 600px;
+            max-width: 800px;
+            width: 100%;
         }
         h1 {
             color: #ff9900;
             font-size: 2.5em;
             margin-bottom: 10px;
+            text-align: center;
         }
         p {
             font-size: 1.2em;
             color: #cccccc;
+            text-align: center;
         }
-        .status {
+        .header-banner {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .header-banner img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #444;
+        }
+        .card {
+            background: #1e1e1e;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 20px;
             margin-top: 20px;
-            padding: 10px;
-            background-color: #333333;
-            border-left: 4px solid #ff9900;
+        }
+        .card h2 {
+            color: #ffb703;
+            margin-top: 0;
+        }
+        .btn {
             display: inline-block;
+            background: #ff9900;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #e58a00;
+        }
+        .schedule-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .schedule-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+        }
+        .schedule-list li:last-child {
+            border-bottom: none;
+        }
+        .date {
+            color: #2a9d8f;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,9 +90,28 @@
     <div class="container">
         <h1>Run 8 Utilities Hub</h1>
         <p>Your central source for Run 8 Train Simulator V3 tools and dispatching utilities.</p>
-        <div class="status">
-            <strong>SITE UNDER CONSTRUCTION</strong><br>
-            Check back soon for upcoming updates and utility releases.
+
+        <!-- Header Photo Banner -->
+        <div class="header-banner">
+            <img src="bg-photo.jpg" alt="Run 8 Utilities Header">
+        </div>
+
+        <!-- Featured Release Card (Sunday's Drop) -->
+        <div class="card">
+            <h2>Photo Enhancement Utility (v1.0)</h2>
+            <p>Batch image processing and trackside photo optimization tool.</p>
+            <p><strong style="color: #2a9d8f;">Status: Available Sunday</strong></p>
+            <a href="#" class="btn">Download .EXE</a>
+        </div>
+
+        <!-- Release Pipeline Card -->
+        <div class="card">
+            <h2>Upcoming Release Pipeline</h2>
+            <ul class="schedule-list">
+                <li><span class="date">November 8:</span> CAD Utility Release</li>
+                <li><span class="date">December:</span> Map Utility (Version 1)</li>
+                <li><span class="date">New Year's Eve:</span> Run 8 DPU & Tonnage Calculator</li>
+            </ul>
         </div>
     </div>
 </body>
